@@ -56,6 +56,22 @@ table {
 
 /*
 ====================
+Custom styles
+====================
+*/
+
+
+body {
+
+ color: #888; 
+font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+
+/*
+====================
 GRID
 ====================
 */
@@ -133,11 +149,67 @@ TYPOGHAPHY
 
 h1, h3, h4, h5, p {
 
-    margin-bottom: 22px;
+  margin-bottom: 22px;
 }
 
+h1, h2, h3, h4 {
+
+  color: #648880;
+} 
+
+h1 {
+font-size: 36px;
+line-height: 44px;
+
+}
+
+h2 {
+font-size: 24px;
+line-height: 44px;
+
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+font-size: 18px;
+
+}
+
+h5 {
+color: #a9b2b9;
+font-size: 14px;
+font-weight: 400;
+
+}
+
+strong {
+  font-weight: 400;
+}
+
+cite, em {
+  font-style: italic;
+}
+
+
+/* 
+===================
+LINKS
+=================== 
+*/
+
+
+
 a {
-    text-decoration: none;
+
+  color: #648880;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a9b2b9;
 }
 
 /* 
@@ -184,10 +256,26 @@ Primary Header
 
 .logo {
     border-top: 9px solid #648880;
-    padding: 40px 0 22px 0;
     float: left;
+    font-size: 48px;
+    line-height: 44px;
+    padding: 40px 0 22px 0;
 
 }
+
+/* 
+=======================
+Header pentru Spekers
+======================= 
+*/
+
+.header-speaker {
+  background-color: #dbdbdb;
+  left: 0;                   /* proprietatile box offset left si right se declara OBLIGATORIU pentru a se alinia in container */
+  right: 0;
+  position: fixed;
+}
+
 
 /* 
 ===================
