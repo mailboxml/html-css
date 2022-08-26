@@ -4,7 +4,13 @@
 <head>
 <meta charset="utf-8">
 <title>Titlu fisier index</title>
+<meta name="robots" content="noindex, nofollow" /> <!--  de schimbat in: <meta name="robots" content="index, follow" />   follow/nofolow in meta se aplica intregii pagini, daca trebuie altceva. se aplica separat linkului -->
+<meta name="description" content="This is an example of a meta description. This will often show up in search results. recommend descriptions between 50 and 160 characters. meta description can, however, impact a page's click-through rate (CTR) in Google SERP.neither meta descriptions nor meta keywords factor into Google's ranking algorithms for web search">
+<link rel="canonical" href="http://example.com/" />   <!--  If you have pages on your site that are almost identical, then you may need to inform search engines which one to prioritize. Or you might have syndicated content on your site which was republished elsewhere. You can do both of these things without incurring a duplicate content penalty  -->
 <link rel="stylesheet" href="assets/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
 
  </head>  
 
@@ -12,17 +18,17 @@
 
   <!-- Sectiune Header -->
 
-  <header class="container clearfix">
+  <header class="primary-header container clearfix">
     
     
   <h1 class="logo"> 
-     <a href="index.html">Styles<br> Conferece - titlu </a> 
+     <a href="index.html">Styles<br> Conferece </a> 
   </h1>
 
   
-  <h3>August 9 &dash; 29 &mdash; Craiova</h3>
+  <h3 class="tagline">August 9 &dash; 29 &mdash; Craiova</h3>
   
-  <nav>
+  <nav class="nav primary-nav">
     <a href="index.html">Home</a>
     <a href="speakers.html">Speakers</a>
     <a href="schedule.html">Schedule</a>
@@ -47,9 +53,10 @@
 
 
 
-<section class="grid">
+<section class="row">
+  <div class="grid">
 
-    <section class="col-1-3">
+    <section class="teaser col-1-3">
   <a href="speakers.html">
   <h5>Speakers</h5>
   <h3> heading h3 pe speakers</h3>  
@@ -58,7 +65,7 @@
  
     </section><!-- 
 
- --><section class="col-1-3">
+ --><section class="teaser col-1-3">
   <a href="schedule.html">
   <h5>Schedule</h5>
   <h3> heading h3 pe schedule</h3> 
@@ -66,7 +73,7 @@
   <p>Paragraf nou pentru sectiunea schedule -section. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni placeat sequi fuga deleniti porro modi ex, iure repudiandae eum ratione quasi nemo laboriosam nisi laborum quidem nihil doloremque maxime.</p>
   </section><!-- 
 
- --><section class="col-1-3">
+ --><section class="teaser col-1-3">
     <a href="venue.html">
     <h5>Venue</h5>
     <h3> heading h3 pe venue</h3> 
@@ -74,6 +81,7 @@
     <p>paragraf pentru sectiunea venue - section. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod repellat impedit accusamus maxime temporibus adipisci dignissimos. Quis natus, harum cupiditate repellendus sapiente, eligendi voluptates, et impedit excepturi iste reiciendis?</p>
   </section>
 
+</div>
 </section>
 
 
@@ -84,7 +92,7 @@
 
   <small>&copy; MMXXII &mdash; Styles conference copyright</small>
   
-  <nav>
+  <nav class="nav">
     <a href="index.html">Home</a>
     <a href="speakers.html">Speakers</a>
     <a href="schedule.html">Schedule</a>

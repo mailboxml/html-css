@@ -62,9 +62,9 @@ Custom styles
 
 
 body {
-
- color: #888; 
-font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+background-color: #293f50;
+color: #888; 
+font: 300 16px/22px Lato, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
@@ -86,7 +86,7 @@ GRID
 
 .container {
 
-margin: 0 auto;
+margin: 0 auto;   /*centrare pe orizontala cu auto */
 padding-left: 30px;
 padding-right: 30px;
 width: 1280px;   /* <= Mai e nevoie de asta ??? Duplicat !  */
@@ -123,22 +123,46 @@ width: 1280px;
 
 }
 
-
-
 /* 
 =======================
 CLEARFIX pentru FLOAT
 ======================= 
 */
 
-.clearfix::after  {
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/* Varianta scurta nu functioneaza fiindca adauga un spatiu deasupra headerului ! Logo are float left!
+ .clearfix::after  {
 
 content: "";
 display: table;
-clear: both;
+clear: both; */
 
+
+/* 
+===================
+ROWS
+=================== 
+*/
+
+.row {
+  background: #fff;
+  min-width: 1280px;  /* daca folosesc doar width bkg nu depaseste dimensiunea grifului. daca pun margin:0 auto, il centreaza, dar tot al dimensiunea grid. min-width il duce pana in margeinea viewport-ului.*/
+  padding: 66px 0 44px 0;
 }
-
 
 
 /* 
@@ -182,7 +206,7 @@ h5 {
 color: #a9b2b9;
 font-size: 14px;
 font-weight: 400;
-
+text-transform: uppercase;
 }
 
 strong {
@@ -212,6 +236,25 @@ a:hover {
   color: #a9b2b9;
 }
 
+
+p a {
+  border-bottom: 1px solid #dfe2e5;
+
+}
+
+.primary-header a,
+.primary-footer a {
+
+  color: #fff;
+
+}
+
+.primary-header a:hover,
+.primary-footer a:hover {
+
+  color: #648880;
+}
+
 /* 
 ===================
 BUTTONS
@@ -220,16 +263,48 @@ BUTTONS
 
 .btn { 
     border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
     display: inline-block;
-    margin: 0;
+    font-weight: 400;
+    letter-spacing: .5px;
+    margin: 0;  /*remove any margins*/
+    text-transform: uppercase;
 
 }
 
 .btn-alt {
-    border: 1px solid #0c7ff3;
+    border: 1px solid #fff;
     padding: 10px 30px;
 
  }
+
+ .btn-alt:hover {
+
+background-color: #fff;
+color: #648880;
+
+ }
+
+/* 
+===================
+Navigation
+=================== 
+*/
+
+.nav {
+  text-align: right;
+  word-spacing: 2px;
+}
+
+.primary-nav {
+
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
 
 
  /* 
@@ -239,13 +314,28 @@ HOME PAGE
 */
 
 .hero {
-    padding: 22px 80px 66px 80px;
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
     
     /* introduse de mine */
     /* margin: 10px auto;
     border-radius: 25px;
     border: 2px solid rgb(226, 6, 6, .3); */
+}
 
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 24px;
+  font-weight: 100;
 }
 
 /* 
@@ -258,10 +348,20 @@ Primary Header
     border-top: 9px solid #648880;
     float: left;
     font-size: 48px;
+    font-weight: 100;
+    letter-spacing: .5px;
     line-height: 44px;
     padding: 40px 0 22px 0;
-
+    text-transform: uppercase;
 }
+
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+
+
+
 
 /* 
 =======================
@@ -283,10 +383,15 @@ Primary Footer
 =================== 
 */
 .primary-footer {
+    color: #648880;
+    font-size: 14px;
     padding-bottom: 44px;
     padding-top: 44px;
 }
 
 .primary-footer small {
     float: left;
+    font-weight: 400;
 }
+
+
