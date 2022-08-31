@@ -323,7 +323,18 @@ Navigation
 
 .nav {
   text-align: right;
-  word-spacing: 2px;
+  /* word-spacing: 2px; */
+}
+
+.nav li {
+
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+
+.nav li:last-child {
+  margin-right: 0;
 }
 
 .primary-nav {
@@ -399,12 +410,13 @@ Header pentru Spekers
 */
 
 
-.fixed-header {
+/* .fixed-header {
   background-color: #dbdbdb;
   left: 0;                   /* proprietatile box offset left si right se declara OBLIGATORIU pentru a se alinia in container */
-  right: 0;
+  /* right: 0;
   position: fixed;
-}
+} 
+*/
 
 
 /* 
