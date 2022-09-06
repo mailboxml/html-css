@@ -89,7 +89,7 @@ GRID
 margin: 0 auto;   /*centrare pe orizontala cu auto */
 padding-left: 30px;
 padding-right: 30px;
-width: 1280px;   /* <= Mai e nevoie de asta ??? Duplicat !  */
+
 
 }
 
@@ -165,7 +165,7 @@ min-width: 1280px;
 
 .row {
   background: #fff;
-  /* min-width: 1280px; daca folosesc doar width bkg nu depaseste dimensiunea grifului. daca pun margin:0 auto, il centreaza, dar tot al dimensiunea grid. min-width il duce pana in margeinea viewport-ului.*/
+  /* min-width: 1280px; daca folosesc doar width bkg nu depaseste dimensiunea grifului. daca pun margin:0 auto, il centreaza, dar tot la dimensiunea grid. min-width il duce pana in margeinea viewport-ului.*/
   padding: 66px 0 44px 0;
 }
 
@@ -505,5 +505,83 @@ background:url("pencil.svg") 7px 50% no-repeat;
 border: 2px solid #a1d3b0;
 border-radius: 7px;
 padding: 10px 0px 10px 30px;
+}
 
+/* 
+===================
+Seciune login
+=================== 
+*/
+
+form {
+
+  border: 1px solid #648880;
+  border-radius: 7px;
+  font: 14px/1.4 "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  width: 260px;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  
+}
+
+input {
+border-radius: 5px;
+font: 14px/1.4 "Helvetica Neue", sans-serif;
+margin: 0;
+}
+
+.account-info {
+  padding: 20px 20px 0 20px;
+}
+
+.account-info label {
+  color: #395870;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 9px;
+
+}
+
+.account-info input {
+  background-color: #fff;
+  border: 1px solid #cbe2c1;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  color: #636466;
+  padding: 5px;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.account-action {
+
+  background-color: #f0f0f2;
+  border-top: 1px solid #c6c7cc;
+  padding: 12px;
+}
+
+.account-action .login-btn{
+  background: linear-gradient(#49708f, #293f50);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 16px;
+}
+
+.login-btn:hover{
+  background-color: #fff;
+  background:#fff;
+  color: #648880;
+}
+
+.account-action label {
+color: #7c7c80;
+font-size: 12px;
+margin: 10px 0 0 10px;
 }
