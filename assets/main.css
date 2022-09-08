@@ -660,11 +660,14 @@ Seciune tabel Home
 */
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 4px;
 }
 
 th,
 td {
   border: 1px solid #49708f;
   padding: 10px 15px;
+  text-align: center;
+
 }
