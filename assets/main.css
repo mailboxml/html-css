@@ -652,3 +652,19 @@ color: #7c7c80;
 font-size: 12px;
 margin: 10px 0 0 10px;
 }
+
+/* 
+===================
+Seciune tabel Home
+=================== 
+*/
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #49708f;
+  padding: 10px 15px;
+}
