@@ -659,9 +659,10 @@ Seciune tabel Home
 =================== 
 */
 
-table {
+.tabel1 {
   border-collapse: separate;
   border-spacing: 4px;
+  border: 1px dashed #49708f;
 }
 
 th,
