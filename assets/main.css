@@ -446,6 +446,23 @@ margin-bottom: 22px;
 
 /* 
 ===================
+Venue PAGE
+=================== 
+*/
+
+table {
+  margin-bottom: 44px;
+  width: 100%;
+}
+
+table:last-child {
+  
+}
+
+
+
+/* 
+===================
 REGISTER PAGE
 =================== 
 */
@@ -663,6 +680,7 @@ Seciune tabel Home
   border-collapse: separate;
   border-spacing: 4px;
   border: 2px dashed #49708f;
+  width: 100%;
 }
 
 .tabel1 th,
@@ -674,6 +692,7 @@ Seciune tabel Home
 }
 
 .table2 {
+  /* width: 100%; -- se intinde pe tot containerul, nu arata bine */
   margin: 0 auto;
   border-collapse: separate;
   border-spacing: 0;
