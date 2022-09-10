@@ -662,12 +662,12 @@ Seciune tabel Home
 .tabel1 {
   border-collapse: separate;
   border-spacing: 4px;
-  border: 1px dashed #49708f;
+  border: 2px dashed #49708f;
 }
 
-th,
-td {
-  border: 1px solid #49708f;
+.tabel1 th,
+.tabel1 td {
+  border: 1px solid #630310;
   padding: 10px 15px;
   text-align: center;
 
@@ -675,4 +675,84 @@ td {
 
 .table2 {
   margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #4a4a4d;
+  font: 16px/1.4 "Lato", sans-serif;
+}
+
+th, 
+td {
+  border-bottom: 1px solid #c6c7cc;
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+
+/* .table2 tfoot tr:last-child td {
+   border-bottom: 0; 
+} */
+
+.table2 thead {
+  background: linear-gradient(#395870, #49708f);
+  color:#fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+.table2 tbody tr:nth-child(even) {
+  background-color: #f0f0f2;
+}
+
+.table2 td {
+  border-bottom: 1px solid #c6c7cc;
+  border-right: 1px solid #c6c7cc;
+}
+
+.table2 td:first-child {
+  border-left:1px solid #c6c7cc;
+}
+
+.book-title {
+  color: #09426e;
+  display: block;
+}
+
+.stock,
+.qty {
+text-align: center;
+}
+
+.pret {
+  text-align: right;
+}
+
+.items {
+  display:block;
+  font: 11px/1.4 "Lato", sans-serif;  
+}
+
+tfoot {
+ text-align: right;
+}
+
+tfoot tr:last-child {
+  background-color: #f0f0f2;
+}
+
+th:first-child {
+  border-top-left-radius: 5px;
+  text-align: left;
+}
+th:last-child {
+  border-top-right-radius: 5px;
+}
+
+tfoot tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+tfoot tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
 }
