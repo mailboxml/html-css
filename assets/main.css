@@ -672,3 +672,7 @@ td {
   text-align: center;
 
 }
+
+.min-container {
+  margin: 0 30%;
+}
