@@ -446,7 +446,7 @@ margin-bottom: 22px;
 
 /* 
 ===================
-Venue PAGE
+Schedule PAGE
 =================== 
 */
 
@@ -456,8 +456,73 @@ table {
 }
 
 table:last-child {
-  
+
+margin-bottom: 0;  
 }
+
+th, 
+td {
+padding-bottom: 22px;
+vertical-align: top;
+}
+
+th {
+  padding-right: 45px;
+  text-align: right;
+  width: 20%;
+}
+
+thead {
+  line-height: 44px;
+}
+
+.th-tbody-head,
+  thead th {
+  color: #648880;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: inherit;
+}
+
+tbody th {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 800;
+  padding-top: 22px;
+  text-transform: uppercase;
+}
+
+tbody td {
+border-top: 1px solid #dfe2e5;
+padding-top: 21px;
+}
+
+
+tbody td:first-of-type {
+  padding-right: 15px;
+}
+
+tbody td:last-of-type {
+  padding-left: 15px;
+}
+
+tbody td:only-of-type {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+table a {
+  color: rgb(128, 0, 42);
+}
+
+table h4 {
+  margin-bottom: 0;
+}
+
+.schedule-offset {
+  color: #f00b7d;
+}
+
 
 
 
@@ -680,7 +745,7 @@ Seciune tabel Home
   border-collapse: separate;
   border-spacing: 4px;
   border: 2px dashed #49708f;
-  width: 100%;
+  width: auto;
 }
 
 .tabel1 th,
@@ -688,23 +753,25 @@ Seciune tabel Home
   border: 1px solid #630310;
   padding: 10px 15px;
   text-align: center;
+  width: auto;
 
 }
 
 .table2 {
-  /* width: 100%; -- se intinde pe tot containerul, nu arata bine */
   margin: 0 auto;
   border-collapse: separate;
   border-spacing: 0;
   color: #4a4a4d;
   font: 16px/1.4 "Lato", sans-serif;
+  width: auto;  /* auto fiindca preia dimensiunea table din tabelul principal - pagina Schedule - inherit*/
 }
 
-th, 
-td {
+.table2 th, 
+.table2 td {
   border-bottom: 1px solid #c6c7cc;
   padding: 10px 15px;
   vertical-align: middle;
+  width: auto; /* auto fiindca preia dimensiunea table din tabelul principal - pagina Schedule - inherit*/
 }
 
 /* .table2 tfoot tr:last-child td {
@@ -713,11 +780,17 @@ td {
 
 .table2 thead {
   background: linear-gradient(#395870, #49708f);
-  color:#fff;
+  color:#fff; 
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 700;
+  line-height: normal;
 
+}
+
+.table2 th {
+  color: inherit;
+  font-size: inherit;
 }
 
 .table2 tbody tr:nth-child(even) {
@@ -752,23 +825,24 @@ text-align: center;
   font: 11px/1.4 "Lato", sans-serif;  
 }
 
-tfoot {
+.table2 tfoot {
  text-align: right;
 }
 
-tfoot tr:last-child {
+ tfoot tr:last-child {
   background-color: #f0f0f2;
 }
 
-th:first-child {
+ th:first-child {
   border-top-left-radius: 5px;
   text-align: left;
 }
-th:last-child {
+ th:last-child {
   border-top-right-radius: 5px;
+  
 }
 
-tfoot tr:last-child td:first-child {
+ tfoot tr:last-child td:first-child {
   border-bottom-left-radius: 5px;
 }
 
